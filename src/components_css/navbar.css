@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Redressed&display=swap");
+
+* {
+  margin: 0;
+}
+
+.burger {
+  display: none;
+}
+
+.navbar {
+  position: fixed;
+  height: 80px;
+  background-color: black;
+  display: flex;
+  width: 100%;
+  font-family: "Redressed", cursive;
+  justify-content: space-between;
+}
+
+.logo {
+  z-index: 2;
+  border-radius: 1000px;
+  height: 40px;
+  margin-top: 20px;
+  margin-left: 10vw;
+}
+
+.left_container {
+  display: flex;
+}
+
+.navbar h1 {
+  font-size: 25px;
+  margin-top: 25px;
+  color: white;
+  padding-left: 0.5rem;
+}
+
+.right_container {
+  color: white;
+  display: flex;
+
+  margin-right: 10vw;
+}
+
+.right_container h3 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 18px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.right_container h3:hover {
+  color: #1ed760;
+  transition: 0.25s ease-out;
+}
+
+.right_container h4 {
+  font-size: 20px;
+  margin-top: 27px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .navbar {
+    height: 55px;
+  }
+  .logo {
+    height: 20px;
+    margin-top: 20px;
+  }
+  .navbar h1 {
+    font-size: 15px;
+    margin-top: 20px;
+  }
+
+  .right_container h3 {
+    font-size: 15px;
+    margin-top: 20px;
+  }
+  .right_container h4 {
+    margin-top: 15px;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .right_container {
+    display: none;
+  }
+  .burger_box {
+    display: block;
+    height: 40px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5vw;
+  }
+  .burger {
+    display: block;
+    width: 25px;
+    height: 4px;
+    background-color: white;
+    border-radius: 5px;
+  }
+  .burger::before,
+  .burger::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 4px;
+    background-color: white;
+    border-radius: 5px;
+  }
+  .burger::before {
+    transform: translateY(10px);
+  }
+  .burger::after {
+    transform: translateY(-10px);
+  }
+}

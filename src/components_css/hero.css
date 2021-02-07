@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Peddana&display=swap");
+
+.hero {
+  height: 100vh;
+  padding-top: 10vh;
+  color: #1ed760;
+  background: url(https://www.scdn.co/i/home/lieVariants/bursts.svg) no-repeat;
+  background-size: 175%;
+  background-color: #2d46b9;
+  background-position: 46% 4%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 600px;
+}
+
+.hero h1 {
+  font-size: 8.5vw;
+  padding-top: 15vh;
+  padding-left: 15vw;
+}
+
+.hero h2 {
+  font-size: 8.5vw;
+  padding-left: 33vw;
+}
+
+.hero h6 {
+  font-size: 1.75vw;
+  text-align: center;
+  font-family: "Peddana", serif;
+  padding-top: 5vh;
+}
+
+.hero button {
+  text-transform: uppercase;
+  color: #2d46b9;
+  height: 6vh;
+  border-radius: 50px;
+  padding: 1vh 3vw 1vh 3vw;
+  background-color: #1ed760;
+  border: none;
+  margin: auto;
+  display: block;
+  margin-top: 7vh;
+}
+
+.hero button:hover {
+  background-color: #fff;
+  transition: 0.25s ease-in;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+  .hero {
+    background: url(https://www.scdn.co/i/home/lieVariants/bursts-mobile.svg)
+      no-repeat;
+    background-color: #2d46b9;
+  }
+  .hero h1 {
+    padding-top: 25vh;
+  }
+  .hero h6 {
+    font-size: 2.5vw;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .hero h1 {
+    font-size: 12vw;
+  }
+  .hero h2 {
+    font-size: 12vw;
+    padding-left: 20vw;
+  }
+  .hero h6 {
+    font-size: 3.5vw;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .hero h1 {
+    font-size: 13vw;
+    padding-left: 12vw;
+  }
+  .hero h2 {
+    font-size: 13vw;
+    padding-left: 12vw;
+  }
+  .hero h6 {
+    font-size: 6vw;
+  }
+}
